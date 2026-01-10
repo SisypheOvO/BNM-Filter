@@ -2,7 +2,7 @@
 
 A userscript that filters only opened BNs in [BN Management](https://bn.mappersguild.com/) lists.
 
-![License](https://img.shields.io/badge/license-MIT-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-orange.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue.svg)
 
 ![Showcase](./assets/OriginalShowcase.png)
 
