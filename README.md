@@ -10,7 +10,7 @@ Filtered vs Original:
 ![OriginalShowcase](./assets/OriginalShowcase.png)
 
 <!-- TODO: add true post here -->
-Check out the Forum post [Development > BNM-filter | user script](https://osu.ppy.sh/community/forums/topics/2145958?n=1).
+~~Check out the Forum post [Development > BNM-filter | user script](https://osu.ppy.sh/community/forums/topics/2145958?n=1).~~
 
 ## Installation
 
@@ -35,4 +35,5 @@ npm run build # build the userscript
 
 ## TODO
 
+- [ ] Improve BN List style
 - [ ] Maybe add a button for toggling
