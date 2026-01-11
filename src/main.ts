@@ -1,13 +1,25 @@
 import { Core } from "@/app"
 
+declare const CONFIG: {
+    removeClosedBN: boolean
+    improveTableStyle: boolean
+    removeFadeEffect: boolean
+}
+
 function init() {
     // perform patches as early as possible
-    Core.patchFadeRemoval()
+    if (CONFIG.removeFadeEffect) {
+        Core.patchFadeRemoval()
+    }
     Core.patchModalClose()
 
     const initCore = async () => {
-        await Core.removeClosedRows()
-        await Core.improveTablesDisplay()
+        if (CONFIG.removeClosedBN) {
+            await Core.removeClosedRows()
+        }
+        if (CONFIG.improveTableStyle) {
+            await Core.improveTablesDisplay()
+        }
     }
 
     if (document.readyState === "loading") {

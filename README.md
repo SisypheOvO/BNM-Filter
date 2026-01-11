@@ -5,7 +5,7 @@ A userscript that filters only opened BNs in [BN Management](https://bn.mappersg
 ![License](https://img.shields.io/badge/license-MIT-orange.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue.svg)
 
 Filtered vs Original:
-![Showcase](./assets/FilteredShowcase.png)
+![Showcase](./assets/FilteredStyledShowcase.png)
 
 ![OriginalShowcase](./assets/OriginalShowcase.png)
 
