@@ -1,12 +1,15 @@
 import { Core } from "@/app"
 
 function init() {
+    const initCore = async () => {
+        await Core.removeClosedRows();
+        await Core.improveTablesDisplay();
+    };
+
     if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", () => {
-            Core.removeClosedRows()
-        })
+        document.addEventListener("DOMContentLoaded", initCore);
     } else {
-        Core.removeClosedRows()
+        initCore();
     }
 
     // listen 2 url changes (if BN Management uses SPA routing)
@@ -16,10 +19,14 @@ function init() {
             const url = location.href
             if (url !== lastUrl) {
                 lastUrl = url
-                setTimeout(() => Core.removeClosedRows(), 500)
+                setTimeout(() => {
+                    initCore()
+                }, 500)
             }
         }).observe(document, { subtree: true, childList: true })
     }
 }
+
+// GM_addStyle maybe
 
 init()

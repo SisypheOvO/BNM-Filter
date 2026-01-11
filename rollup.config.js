@@ -8,7 +8,7 @@ export default {
         banner: `// ==UserScript==
 // @name         BNM-Filter
 // @namespace    URL
-// @version      0.1.0
+// @version      0.1.1
 // @description  filter opened BNs in BN Management list
 // @author       Sisyphus
 // @license      MIT
